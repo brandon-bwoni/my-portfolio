@@ -1,15 +1,28 @@
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route
 
-import Hero from "./components/Hero";
-import { Navbar, About, Projects } from "./components/index";
+} from "react-router-dom";
+
+import Home from "./pages/Home";
+import MainLayout from "./Layout/MainLayout";
+
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      {/* <Route index element={<Home />} /> */}
+
+    </Route>
+  )
+);
 
 function App() {
   return (
-    <div >
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
