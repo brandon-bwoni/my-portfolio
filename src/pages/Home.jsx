@@ -1,11 +1,15 @@
-import MainLayout from '../Layout/MainLayout';
-import { Footer } from '../components/index';
-import { Hero, About, Projects } from "../components/index";
+import { Hero, Intro, Projects, Services } from "../components/index";
+import { Card } from "../components/UI";
 
 
 const Home = () => {
   return (
-    <MainLayout />
+    <div className="">
+      <Hero />
+      <Intro />
+      <Services />
+      <Projects />
+    </div>
   );
 };
 

@@ -25,8 +25,8 @@ export default {
         '2xl': '1440px',
         // => @media (min-width: 1536px) { ... }
       },
-      gridTemplateColumns: {
-        custom_layout: '5% 95%',
+      colors: {
+        'light': 'bg-gradient-to-br from-orange-300 from:30% via-pink-300 via:50% from:70% to-orange-300'
       }
     },
   },

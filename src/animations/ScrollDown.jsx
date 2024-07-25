@@ -14,9 +14,9 @@ const downVariants = {
 
 const ScrollDown = () => {
   return (
-    <div className='flex flex-col mx-auto mt-12 w-10 h-16 border-orange-600 border-4 rounded-full '>
+    <div className='flex flex-col w-10 h-16 border-slate-800 border-4 rounded-full '>
       <motion.div
-        className='bg-orange-600 h-4 w-4 p-3 rounded-full ml-[4px] my-[2px]'
+        className='bg-slate-800 h-4 w-4 p-3 rounded-full ml-[4px] my-[2px]'
         variants={downVariants}
         initial='hidden'
         animate='visible'
