@@ -11,7 +11,7 @@ function Hero() {
       <div className="w-1/2 h-full flex flex-col  font-medium justify-center lg:justify-start items-center mt-16 lg:mt-32 mx-auto">
         <div className="text-center ">
           <h1 className="sm:text-2xl font-semibold lg:text-3xl dark:text-lightBg text-lightBtn">
-            Hello, I'M
+            Hello, I&apos;M
           </h1>
           <h1 className="text-wrap text-3xl xl:text-4xl text-lightText dark:text-orange-500 font-bold">
             BRANDON TAKURA BWONI
@@ -39,7 +39,7 @@ function Hero() {
         {/* Socials */}
         <div className="font-normal flex flex-col mt-4 gap-2 justify-start">
           <p className="font-semibold light:text-darkText dark:text-lightBg text-lightText text-center ">
-            Let's connect
+            Let&apos;s connect
           </p>
           <Socials />
           <div className="flex justify-center items-center pt-2 mt-6  rounded-ful w-14 h-14 ml-10">

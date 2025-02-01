@@ -16,7 +16,7 @@ const imageVariants = {
     opacity: 1,
     x: 10,
     transition: {
-      duration: 0.8,
+      duration: 0.6,
     },
   },
 };
@@ -69,13 +69,13 @@ function AboutMe() {
             </p>
             <p className="leading-6">
               One lazy Sunday, I decided to whip up a personal website to share
-              my life's little adventures. That’s when JavaScript worked its
-              magic, and I was completely hooked.
+              my life&apos;s little adventures. That&apos;s when JavaScript
+              worked its magic, and I was completely hooked.
             </p>
             <br />
             <p>
               Fast forward four years, and what started as a curious experiment
-              has become my life’s passion: creating innovative software
+              has become my life&apos;s passion: creating innovative software
               solutions to tackle real-world challenges. My insatiable curiosity
               and deep love for technology have driven me to master diverse
               domains like:
@@ -87,12 +87,10 @@ function AboutMe() {
             </p>
           </span>
           <div className="flex sm:justify-center lg:justify-start mt-6 ">
-            <Link href="/contact">
+            <Link href="/resume">
               <button className="w-[150px] h-10 flex justify-center items-center bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90 dark:text-darkText dark:hover:text-darkBg dark:bg-orange-500 font-normal  rounded-3xl shadow dark:hover:bg-orange-400 px-4  hover:shadow-xl hover:transition-all hover:font-semibold">
-                <span>
-                  <RiPagesLine className="h-7 w-7 pr-1" />
-                </span>
-                <p className="text-nowrap text-sm">Download CV</p>
+                <RiPagesLine className="h-7 w-7 pr-1" />
+                <p className="text-nowrap text-sm">View resume</p>
               </button>
             </Link>
           </div>

@@ -7,7 +7,11 @@ import { projects } from "@/assets/provider";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const page = ({ params }) => {
+interface Params {
+  id: string;
+}
+
+const page = ({ params }: { params: Params }) => {
   const { id } = params;
   const project = projects.find((project) => project.id === id);
 
@@ -22,8 +26,8 @@ const page = ({ params }) => {
       <div className="h-[40%] flex flex-col justify-center items-center  gap-5 pt-20 lg:pt-16 ">
         <div className="w-[92%] wrap bg-black/">
           <Image
-            src={project?.banner}
-            alt={project?.name}
+            src={project?.banner || "/default-banner.jpg"}
+            alt={project?.name || "Project banner"}
             className="w-full h-full lg:h-[360px] rounded-2xl"
           />
           <div className="wrap top-4">
@@ -91,11 +95,12 @@ const page = ({ params }) => {
       <div className="flex flex-col gap-2 justify-center mt-6 px-6 xl:px-24">
         <h1 className="text-2xl font-bold text-center">Technologies</h1>
         <div className="flex flex-col justify-center mx-auto text-sm lg:text-lg leading-5">
-          {Object.entries(project?.technologies).map(([key, value]) => (
-            <li key={key}>
-              <strong>{key}</strong>: {value}
-            </li>
-          ))}
+          {project?.technologies &&
+            Object.entries(project.technologies).map(([key, value]) => (
+              <li key={key}>
+                <strong>{key}</strong>: {value}
+              </li>
+            ))}
         </div>
       </div>
       <div className="flex flex-col gap-2 justify-center mt-6 px-24">

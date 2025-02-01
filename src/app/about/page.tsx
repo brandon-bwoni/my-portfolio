@@ -13,13 +13,13 @@ const About = () => {
         <div className="mx-auto px-8">
           <p className="text-center lg:text-lg leading-5 font-normal dark:text-darkText text-lightText">
             Hi there! My name is Brandon Takura Bwoni. From Harare, Zimbabwe.
-            I'm a fullstack software developer. I hold a Bachelor's degree in
-            Computer Application from Jain University, India.{" "}
+            I&apos;m a fullstack software developer. I hold a Bachelor&apos;s
+            degree in Computer Application from Jain University, India.{" "}
           </p>
         </div>
         <div className="mx-auto ">
           <p className="flex justify-center text-center pt-4 font-semibold sm:text-md lg:text-xl sm:text-wrap dark:text-darkText text-lightText">
-            When I'm not on my laptop working I enjoy:{" "}
+            When I&apos;m not on my laptop working I enjoy:{" "}
           </p>
           <div className="flex justify-center">
             <ul className="flex flex-col px-16 lg:ml-8">
