@@ -62,8 +62,8 @@ function AboutMe() {
             Me
           </b>
         </span>
-        <div className="mt-3">
-          <span className="dark:text-darkText text-lightText sm:text-md xl:text-base  font-normal leading-5">
+        <div className="mt-3 px-4">
+          <span className="dark:text-darkText text-lightText sm:text-md xl:text-base  font-normal leading-5 ">
             <p className="mb-1">
               Funny story, I stumbled into programming entirely by accident.
             </p>
@@ -88,7 +88,7 @@ function AboutMe() {
           </span>
           <div className="flex sm:justify-center lg:justify-start mt-6 ">
             <Link href="/resume">
-              <button className="w-[150px] h-10 flex justify-center items-center bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90 dark:text-darkText dark:hover:text-darkBg dark:bg-orange-500 font-normal  rounded-3xl shadow dark:hover:bg-orange-400 px-4  hover:shadow-xl hover:transition-all hover:font-semibold">
+              <button className="w-[150px] h-10 flex justify-center items-center bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90 dark:text-darkText dark:hover:text-darkBg dark:bg-orange-500 font-normal  rounded-xl shadow dark:hover:bg-orange-400 px-4  hover:shadow-xl hover:transition-all hover:font-semibold">
                 <RiPagesLine className="h-7 w-7 pr-1" />
                 <p className="text-nowrap text-sm">View resume</p>
               </button>

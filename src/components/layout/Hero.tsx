@@ -13,7 +13,7 @@ function Hero() {
           <h1 className="sm:text-2xl font-semibold lg:text-3xl dark:text-lightBg text-lightBtn">
             Hello, I&apos;M
           </h1>
-          <h1 className="text-wrap text-3xl xl:text-4xl text-lightText dark:text-orange-500 font-bold">
+          <h1 className="text-wrap text-4xl xl:text-5xl text-lightText dark:text-orange-500 font-bold px-2">
             BRANDON TAKURA BWONI
           </h1>
         </div>
@@ -22,14 +22,14 @@ function Hero() {
         </div>
         <div className="w-[240px] h-10 flex flex-row mt-4 mb-2  rounded-3xl gap-4">
           <Link href="/contact">
-            <button className="w-[110px] h-10 flex justify-center items-center bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90  font-medium  dark:text-lightBg dark:bg-orange-500 dark:hover:bg-orange-300 dark:hover:text-darkBg light:bg-textDark text-[14px] rounded-3xl  hover:shadow-xl hover:transition-all hover:font-semibold">
+            <button className="w-[110px] h-10 flex justify-center items-center bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90  font-medium  dark:text-lightBg dark:bg-orange-500 dark:hover:bg-orange-300 dark:hover:text-darkBg light:bg-textDark text-[14px] rounded-xl  hover:shadow-xl hover:transition-all hover:font-semibold">
               Hire me!
             </button>
           </Link>
           <Link href="/projects">
             <button
-              className="flex justify-center items-center px-4 h-10 border-2 sm:text-nowrap border-lightBtn 
-              hover:bg-lightBtn/20   dark:border-darkText text-lightText font-medium light:border-white rounded-3xl text-sm hover:border-0 hover:font-semibold dark:hover:bg-darkText/20  hover:text-bold dark:text-darkText dark:hover:shadow-darkText/10 hover:shadow-darkBg/50"
+              className="flex justify-center items-center px-4 h-10 border sm:text-nowrap border-lightBtn 
+              hover:bg-lightBtn/20   dark:border-darkText text-lightText font-medium light:border-white rounded-xl text-sm hover:border-0 hover:font-semibold dark:hover:bg-darkText/20  hover:text-bold dark:text-darkText dark:hover:shadow-darkText/10 hover:shadow-darkBg/50"
             >
               My Projects
             </button>

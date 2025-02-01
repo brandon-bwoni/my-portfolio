@@ -45,13 +45,13 @@ const ProjectCard = ({
           </div>
           <div className="flex flex-row justify-center gap-4 pt-2">
             <a href={github} target="_blank" rel="noopener noreferrer">
-              <button className="flex justify-center items-center w-[100px] h-10 border  sm:text-nowrap border-lightText hover:bg-lightText/20 hover:text-lightText dark:border-darkText font-medium rounded-3xl text-sm text-lightText  dark:hover:bg-darkText/20 dark:hover:text-darkBg  hover:font-semibold hover:border-0 dark:text-darkText gap-1  hover:shadow-darkBg/30">
+              <button className="flex justify-center items-center w-[100px] h-10 border  sm:text-nowrap border-lightText hover:bg-lightText/20 hover:text-lightText dark:border-darkText font-medium rounded-xl text-sm text-lightText  dark:hover:bg-darkText/20 dark:hover:text-darkBg  hover:font-semibold hover:border-0 dark:text-darkText gap-1  hover:shadow-darkBg/30">
                 <FaGithub className="h-5 w-5 " />
                 <span>Github</span>
               </button>
             </a>
             <Link href="/demo">
-              <button className="w-[100px] h-10 sm:text-nowrap font-medium rounded-3xl text-sm bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90 hover:text-white dark:text-darkText dark:bg-darkBg dark:hover:bg-lightText dark:hover:text-white hover:shadow-xl hover:transition-all ">
+              <button className="w-[100px] h-10 sm:text-nowrap font-medium rounded-xl text-sm bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90 hover:text-white dark:text-darkText dark:bg-darkBg dark:hover:bg-lightText dark:hover:text-white hover:shadow-xl hover:transition-all ">
                 <div className="flex justify-center gap-2">
                   <MdScreenshotMonitor className="h-5 w-5 " />
                   <p>Demo</p>
