@@ -138,7 +138,7 @@ const ContactForm: React.FC = () => {
         <div className="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex"></div>
         <button
           type="submit"
-          className="inline-block w-full rounded-3xl bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal dark:text-darkText lg:mb-0 dark:bg-orange-500 bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90
+          className="inline-block w-full rounded-xl bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal dark:text-darkText lg:mb-0 dark:bg-orange-500 bg-lightText dark:hover:bg-orange-400 text-lightBtn hover:bg-blue-800 hover:text-white/90
                     dark:hover:text-darkBg overflow-x-none hover:shadow-xl hover:transition-all "
         >
           <span className="flex items-center gap-1 justify-center hover:font-semibold">
