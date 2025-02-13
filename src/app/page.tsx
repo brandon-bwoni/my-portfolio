@@ -10,7 +10,7 @@ import Contact from "@/components/layout/Contact";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Hero />
       <AboutMe />
       <Services />

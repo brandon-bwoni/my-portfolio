@@ -18,7 +18,7 @@ function Services() {
           </b>
         </span>
       </div>
-      <div className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-8 mb-8 px-2 lg:pl-0 overflow-y-hidden lg:justify-center mt-6">
+      <div className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-4 lg:gap-8 mb-8 px-2 lg:pl-0 overflow-y-hidden lg:justify-center mt-6">
         {/* Services */}
         <div className="flex flex-col justify-center items-center gap-3 w-56 h-56 bg-light_btn bg-lightText dark:bg-orange-500 rounded-xl text-center hover:transition-all hover:shadow-xl  ">
           {/* First service */}

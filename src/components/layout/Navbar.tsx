@@ -36,7 +36,7 @@ function Navbar() {
   const content = (
     <>
       {/* Mobile menu */}
-      <div className="flex xl:hidden fixed origin-top top-16 w-full  -right-2 z-50 dark:bg-darkBg bg-lightBg transition ">
+      <div className="flex xl:hidden fixed origin-top top-16 w-full  -right-2 z-50 dark:bg-navBg bg-lightBg transition ">
         <ul className="w-full text-center text-md px-12 pb-4 dark:text-darkText">
           <Link href="/">
             <div onClick={closeMobileMenu}>
@@ -55,7 +55,7 @@ function Navbar() {
           <Link href="/projects">
             <li
               onClick={closeMobileMenu}
-              className="my-3 hover:bg-opacity-50 py-3 border-b border-lightText dark:border-darkText  hover:rounded"
+              className="my-3 hover:bg-opacity-50 py-3 border-b border-lightText dark:border-darkText  hover:rounded "
             >
               <span
                 className={`flex flex-row items-center justify-center gap-2 ml-4 text-lightText dark:text-darkText ${
@@ -153,7 +153,7 @@ function Navbar() {
 
   return (
     // Main Navigation
-    <nav className="w-full bg-darkText bg-opacity-20 dark:bg-darkBg dark:bg-opacity-20 backdrop-blur-md fixed top-0 start-0 z-50 mr-2">
+    <nav className="w-full bg-darkText bg-opacity-20 dark:bg-navBg dark:bg-opacity-20 backdrop-blur-md fixed top-0 start-0 z-50 mr-2">
       <div className="h-[68px] flex  dark:text-darkText w-full sm:px-2 md:px-6 xl:px-12 flex-1 mx-auto">
         <div className="flex items-center flex-1 ">
           <Link href="/">
@@ -171,8 +171,7 @@ function Navbar() {
             <ul className=" flex gap-10 text-sm font-medium ">
               <Link href="/" className="group">
                 <li
-                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn cursor-pointer 
-                  bg-left-bottom dark:bg-darkGrad bg-lightGrad bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out ${
+                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn relative after:bg-lightBtn after:dark:bg-orange-500  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${
                     pathname === "/"
                       ? "dark:text-orange-500 text-lightBtn "
                       : ""
@@ -186,8 +185,7 @@ function Navbar() {
               </Link>
               <Link href="/projects" className="group">
                 <li
-                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn cursor-pointer
-                  bg-left-bottom dark:bg-darkGrad bg-lightGrad bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out ${
+                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn relative after:bg-lightBtn after:dark:bg-orange-500  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${
                     pathname === "/projects"
                       ? "dark:text-orange-500 text-lightBtn"
                       : ""
@@ -201,12 +199,11 @@ function Navbar() {
               </Link>
               <Link href="/about" className="group">
                 <li
-                  className={` hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn cursor-pointer
-                 bg-left-bottom dark:bg-darkGrad bg-lightGrad bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out ${
-                   pathname === "/about"
-                     ? "dark:text-orange-500 text-lightBtn "
-                     : ""
-                 }`}
+                  className={` hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn relative after:bg-lightBtn after:dark:bg-orange-500  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${
+                    pathname === "/about"
+                      ? "dark:text-orange-500 text-lightBtn "
+                      : ""
+                  }`}
                 >
                   <span className="flex flex-row justify-center items-center gap-1 pb-1">
                     <MdPersonOutline className="w-5 h-5" />
@@ -216,12 +213,11 @@ function Navbar() {
               </Link>
               <Link href="/contact" className="group">
                 <li
-                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn cursor-pointer
-                 bg-left-bottom dark:bg-darkGrad bg-lightGrad bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out ${
-                   pathname === "/contact"
-                     ? "dark:text-orange-500 text-lightBtn "
-                     : ""
-                 }`}
+                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn relative after:bg-lightBtn after:dark:bg-orange-500  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${
+                    pathname === "/contact"
+                      ? "dark:text-orange-500 text-lightBtn "
+                      : ""
+                  }`}
                 >
                   <span className="flex flex-row justify-center items-center gap-1 pb-1">
                     <MdOutlineContactMail className="w-4 h-4" />
@@ -231,12 +227,11 @@ function Navbar() {
               </Link>
               <Link href="/resume" className="group">
                 <li
-                  className={` hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn cursor-pointer
-                 bg-left-bottom dark:bg-darkGrad bg-lightGrad bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out ${
-                   pathname === "/resume"
-                     ? "dark:text-orange-500 text-lightBtn"
-                     : ""
-                 }`}
+                  className={` hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn relative after:bg-lightBtn after:dark:bg-orange-500  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${
+                    pathname === "/resume"
+                      ? "dark:text-orange-500 text-lightBtn"
+                      : ""
+                  }`}
                 >
                   <span className="flex flex-row justify-center items-center gap-1 pb-1">
                     <RiPagesLine className="w-4 h-4" />
@@ -246,12 +241,11 @@ function Navbar() {
               </Link>
               <Link href="/blog" className="group">
                 <li
-                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn cursor-pointer
-                 bg-left-bottom dark:bg-darkGrad bg-lightGrad bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out ${
-                   pathname === "/blog"
-                     ? "dark:text-orange-500 text-lightBtn "
-                     : ""
-                 }`}
+                  className={`hover:border-orange-500 text-lightText dark:text-darkText dark:hover:text-orange-500 font-medium hover:text-lightBtn relative after:bg-lightBtn after:text-lightBtn after:dark:bg-orange-500  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${
+                    pathname === "/blog"
+                      ? "dark:text-orange-500 text-lightBtn "
+                      : ""
+                  }`}
                 >
                   <span className="flex flex-row justify-center items-center gap-1 pb-1">
                     <TfiWrite className="w-4 h-4" />

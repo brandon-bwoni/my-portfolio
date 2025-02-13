@@ -14,16 +14,20 @@ const config: Config = {
         lightBg: '#FFEDD5',
         darkText: '#FFEDD5',
         lightText: '#07407B',
-        lightBtn: '#7FCDEE'
+        lightBtn: '#7FCDEE',
+        navBg: '#1D101D',
+        footerBg: "#F2E5F2"
       },
       boxShadow:{
         'lightShadow': '0 4px 4px 4px rgb(255,237,213, 0.3)',
         'darkShadow': '0 4px 4px 4px rgb(7,64,123)',
       },
       backgroundImage: {
-        'light-theme': 'linear-gradient(122deg, rgba(253,186,116,1) 25%, rgba(249,168,212,0.9641981792717087) 40%, rgba(250,172,191,1) 60%, rgba(253,185,123,1) 75%)',
-        'darkGrad': 'linear-gradient(90deg, rgba(249,115,22,1) 50%, rgba(249,115,22,1) 100%);',
-        'lightGrad': 'linear-gradient(90deg, rgba(127,205,238,1) 50%, rgba(127,205,238,1) 100%);'
+        'lightBlueCircle': 'radial-gradient(circle, rgba(127,205,238,0.5318860820695466) 45%, rgba(255,237,213,0.6) 100%);',
+        'orangeCircle': 'radial-gradient(circle, rgba(255,130,44,1) 50%, rgba(253,186,116,1) 100%)',
+        'lightOrangeCircle': 'radial-gradient(circle, rgba(251,146,60,1) 45%, rgba(255,237,213,0.7) 95%)',
+        'bigBlue': 'radial-gradient(circle, rgba(251,146,60,1) 45%, rgba(255,237,213,0.7) 95%)',
+       
       },
     },
    

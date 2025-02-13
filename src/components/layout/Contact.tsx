@@ -15,7 +15,7 @@ const Contact = () => {
           </b>
         </span>
       </div>
-      <span className="text-center text-base dark:text-darkText text-lightBtn">
+      <span className="text-center text-base dark:text-darkText text-lightText">
         <p>
           If you want to <b>Hire Me</b>, want us to <b>Collaborate</b> on a
           project, or you just want to <b>Connect</b> with me. Feel free to get

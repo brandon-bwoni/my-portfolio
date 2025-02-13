@@ -12,7 +12,7 @@ const kode_mono = Kode_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brandon Takura Bwoni | Portfolio",
+  title: "Brandon Takura | Portfolio",
   description:
     "Software Engineer, Software Developer, Web Developer, Mobile Developer, UI/UX Designer",
 };
@@ -24,16 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kode_mono.className}>
+      <link rel="icon" href="/favicon.ico" />
+      <body className={`${kode_mono.className} dark:main `}>
         <ToastProvider>
           <Providers>
-            <nav className="bg-orange-300 bg-opacity-10">
-              <Navbar />
-            </nav>
-            <main className="bg-lightBg dark:bg-darkBg ">{children}</main>
-            <footer>
+            <Navbar />
+            <main className="space stars1 bg-lightBg">
+              {children}
               <Footer />
-            </footer>
+            </main>
           </Providers>
         </ToastProvider>
       </body>

@@ -17,7 +17,7 @@ function Hero() {
             BRANDON TAKURA BWONI
           </h1>
         </div>
-        <div className="text-sm lg:text-xl text-lightBtn dark:text-lightBg font-medium mt-4 mb-2">
+        <div className="text-xs lg:text-xl text-lightBtn dark:text-lightBg font-medium mt-4 mb-2">
           <Type />
         </div>
         <div className="w-[240px] h-10 flex flex-row mt-4 mb-2  rounded-3xl gap-4">
