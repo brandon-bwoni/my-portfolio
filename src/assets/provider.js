@@ -136,11 +136,11 @@ const logos = [
     'name': 'Django',
     'logo': django
   },
-  // {
-  //   'id': 17,
-  //   'name': 'Laravel',
-  //   'logo': laravel
-  // },
+  {
+    'id': 17,
+    'name': 'Laravel',
+    'logo': laravel
+  },
   {
     'id': 18,
     'name': 'MySQL',
@@ -210,7 +210,7 @@ const logos = [
 const projects = [
   {
     'id': 'fullstack-dashboard',
-    'name': 'Fullstack Admin Dashboard',
+    'name': 'CRM Admin Dashboard',
     'category': 'Web dev & Data Analytics',
     'image': analytics,
     'banner': dashboardBanner,
