@@ -36,7 +36,7 @@ function Navbar() {
   const content = (
     <>
       {/* Mobile menu */}
-      <div className="flex xl:hidden fixed origin-top top-16 w-full  -right-2 z-50 dark:bg-navBg bg-lightBg transition ">
+      <div className="flex xl:hidden fixed origin-top top-16 w-full  -right-2 z-50 dark:bg-navBg bg-footerBg transition ">
         <ul className="w-full text-center text-md px-12 pb-4 dark:text-darkText">
           <Link href="/">
             <div onClick={closeMobileMenu}>
