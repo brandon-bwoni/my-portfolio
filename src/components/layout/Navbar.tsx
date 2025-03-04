@@ -153,7 +153,7 @@ function Navbar() {
 
   return (
     // Main Navigation
-    <nav className="w-full bg-darkText bg-opacity-20 dark:bg-navBg dark:bg-opacity-20 backdrop-blur-md fixed top-0 start-0 z-50 mr-2">
+    <nav className="w-full bg-footerBg bg-opacity-20 dark:bg-navBg dark:bg-opacity-20 backdrop-blur-md fixed top-0 start-0 z-50 mr-2">
       <div className="h-[68px] flex  dark:text-darkText w-full sm:px-2 md:px-6 xl:px-12 flex-1 mx-auto">
         <div className="flex items-center flex-1 ">
           <Link href="/">
