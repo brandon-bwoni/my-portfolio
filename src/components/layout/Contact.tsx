@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ContactForm } from "../UI/ContactForm";
+import ContactForm from "../UI/ContactForm";
 
 import fullstack from "../../assets/fullstack.png";
 
