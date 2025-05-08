@@ -1,5 +1,5 @@
-import ContactForm from "@/components/UI/ContactForm";
-import Socials from "@/components/UI/Socials";
+import ContactForm from "../../components/UI/ContactForm";
+import Socials from "../../components/UI/Socials";
 
 const Contact = () => {
   return (

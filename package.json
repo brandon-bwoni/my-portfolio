@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@hookform/resolvers": "^5.0.1",
     "@next/font": "^14.2.15",
-    "dompurify": "^3.2.3",
     "dotenv": "^16.4.7",
     "framer-motion": "^11.3.24",
     "next": "14.2.5",
@@ -22,7 +22,7 @@
     "react-toastify": "^10.0.6",
     "sharp": "^0.33.5",
     "typewriter-effect": "^2.21.0",
-    "validator": "^13.12.0"
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/UI/ProjectCard";
+import ProjectCard from "../../components/UI/ProjectCard";
 import { projects } from "@/assets/provider";
 
 const Projects = () => {

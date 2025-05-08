@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "@/assets/intro.png";
+import image from "../assets/intro.png";
 
 const CirclesDesign = () => {
   return (

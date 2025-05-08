@@ -3,8 +3,8 @@ import { Kode_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers, ToastProvider } from "./Providers";
 
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 const kode_mono = Kode_Mono({
   subsets: ["latin"],

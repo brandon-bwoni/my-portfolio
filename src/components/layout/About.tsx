@@ -4,7 +4,7 @@ import Image from "next/image";
 import { RiPagesLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 
-import myImage from "@/assets/my-image.png";
+import myImage from "../../assets/my-image.png";
 
 // Animation variants
 const imageVariants = {
