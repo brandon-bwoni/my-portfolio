@@ -105,7 +105,7 @@ export const ContactForm = () => {
           </div>
         )}
       </div>
-      <div className="relative mb-6" data-te-input-wrapper-init>
+      <div className="relative mb-3" data-te-input-wrapper-init>
         <textarea
           className="peer block min-h-[auto] w-full rounded border-b-2 border-lightBtn dark:border-orange-500 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-darkText dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 text-lightText dark:caret-orange-500 caret-lighText"
           rows={3}
@@ -135,3 +135,5 @@ export const ContactForm = () => {
     </form>
   );
 };
+
+export default ContactForm;
