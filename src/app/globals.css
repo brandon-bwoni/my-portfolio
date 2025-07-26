@@ -6,6 +6,10 @@ html{
   font-family: 'Kode_Mono', 'Courier New', Courier, monospace;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 /* Space bg */
 .main {
   background: radial-gradient(circle at bottom, #0E0F3B 0, black 100%);

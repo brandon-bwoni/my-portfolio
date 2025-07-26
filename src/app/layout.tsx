@@ -5,6 +5,7 @@ import { Providers, ToastProvider } from "./Providers";
 
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const kode_mono = Kode_Mono({
   subsets: ["latin"],
