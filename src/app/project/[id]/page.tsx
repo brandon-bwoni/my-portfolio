@@ -21,10 +21,10 @@ const page = ({ params }: { params: Params }) => {
   };
 
   return (
-    <div className="h-full bg-lightBg dark:bg-darkBg">
+    <div className="h-full px-16">
       {/* header part */}
       <div className="h-[40%] flex flex-col justify-center items-center  gap-5 pt-20 lg:pt-16 ">
-        <div className="w-[92%] wrap bg-black/">
+        <div className="w-[90%] wrap bg-black/">
           <Image
             src={project?.banner || "/default-banner.jpg"}
             alt={project?.name || "Project banner"}
@@ -32,7 +32,7 @@ const page = ({ params }: { params: Params }) => {
           />
           <div className="wrap top-4">
             <Link href="/projects">
-              <button className="absolute flex justify-center items-center left-6 lg:left-16 top-24 w-8 h-8 bg-lightBg dark:bg-darkBg rounded-full">
+              <button className="absolute flex justify-center items-center left-6 lg:left-40 top-24 w-8 h-8 bg-lightBg dark:bg-darkBg/30 rounded-full">
                 <p className="">
                   <FaArrowLeft className="h-5 w-5 dark:text-orange-500 text-lightText" />
                 </p>
@@ -50,20 +50,20 @@ const page = ({ params }: { params: Params }) => {
                 variants={buttonVariants}
                 initial="initial"
                 animate="animate"
-                className="flex p-6 bg-lightBg dark:bg-darkBg/80 shadow-xl justify-center gap-6 rounded-xl"
+                className="flex p-6 bg-lightBg dark:bg-darkBg/80 shadow-md justify-center gap-6 rounded-xl"
               >
                 <a
                   href={project?.github || ""}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="flex justify-center items-center w-[100px] h-10 border  sm:text-nowrap border-lightText hover:bg-lightText/20 hover:text-lightText dark:border-darkText font-medium rounded-xl text-sm text-lightText  dark:hover:bg-darkText/20 dark:hover:text-darkText  hover:font-bold hover:border-0 dark:text-darkText gap-1  hover:shadow-darkBg/30">
+                  <button className="flex justify-center items-center w-[100px] h-10 border  sm:text-nowrap border-lightText hover:bg-lightText/20 hover:text-lightText dark:border-darkText font-medium rounded-xl text-sm text-lightText  dark:hover:bg-darkText/20 dark:hover:text-darkText dark:hover:border-transparent hover:border-transparent dark:text-darkText gap-1  hover:shadow-darkBg/30">
                     <FaGithub className="h-5 w-5 " />
                     <span>Github</span>
                   </button>
                 </a>
                 <Link href="/demo">
-                  <button className="w-[100px] h-10 sm:text-nowrap font-medium rounded-xl text-sm hover:font-bold bg-lightText text-lightBtn hover:text-white dark:text-darkText dark:bg-darkBg dark:hover:bg-lightText dark:hover:text-white hover:shadow-xl hover:transition-all ">
+                  <button className="w-[100px] h-10 sm:text-nowrap font-medium rounded-xl text-sm bg-lightText text-lightBtn hover:text-white dark:text-darkText dark:bg-darkBg dark:hover:bg-lightText dark:hover:text-white hover:shadow-md hover:transition-all ">
                     <div className="flex justify-center gap-2">
                       <MdScreenshotMonitor className="h-5 w-5 " />
                       <p>Demo</p>

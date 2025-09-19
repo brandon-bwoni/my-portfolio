@@ -6,7 +6,7 @@ import { logos } from "@/assets/provider.js";
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center h-full lg:px-24 pt-20  pb-16">
-      <h1 className="text-center sm:text-2xl lg:text-3xl font-semibold dark:text-darkText text-lightBtn">
+      <h1 className="text-center text-3xl lg:text-4xl font-semibold dark:text-darkText text-lightBtn">
         About <span className="dark:text-orange-500 text-lightText">Me</span>
       </h1>
       <div className="w-full my-4">

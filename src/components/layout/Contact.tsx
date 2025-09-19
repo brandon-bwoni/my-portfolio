@@ -1,13 +1,13 @@
 import Image from "next/image";
-import ContactForm from "../UI/ContactForm";
+import {ContactForm} from "../UI/ContactForm";
 
 import fullstack from "../../assets/fullstack.png";
 
-const Contact = () => {
+export const Contact = () => {
   return (
-    <div className="mx-8 lg:mx-16 pt-6 pb-12">
+    <div className="mx-8 lg:mx-16 xl:mx-16 my-16 xl:my-32">
       <div className="flex justify-center pt-2">
-        <span className="font-semibold dark:text-darkText text-lightBtn  text-2xl mb-2">
+        <span className="font-semibold dark:text-darkText text-lightBtn text-3xl lg:text-4xl mb-3">
           Contact{" "}
           <b className="text-lightText dark:text-orange-500 font-semibold">
             {" "}
@@ -15,7 +15,7 @@ const Contact = () => {
           </b>
         </span>
       </div>
-      <span className="text-center text-base dark:text-darkText text-lightText">
+      <span className="text-center text-base dark:text-darkText lg:text-lg text-lightText">
         <p>
           If you want to <b>Hire Me</b>, want us to <b>Collaborate</b> on a
           project, or you just want to <b>Connect</b> with me. Feel free to get
@@ -35,4 +35,3 @@ const Contact = () => {
   );
 };
 
-export default Contact;

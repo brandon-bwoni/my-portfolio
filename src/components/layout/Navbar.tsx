@@ -19,7 +19,7 @@ import { TfiWrite } from "react-icons/tfi";
 import logo from "../../assets/logo.png";
 import ThemeSwitch from "../theme/ThemeSwitch";
 
-function Navbar() {
+export const Navbar = () => {
   const [click, setClick] = useState(false);
   const pathname = usePathname();
 
@@ -275,4 +275,3 @@ function Navbar() {
   );
 }
 
-export default Navbar;

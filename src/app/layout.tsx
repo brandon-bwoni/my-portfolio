@@ -3,8 +3,8 @@ import { Kode_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers, ToastProvider } from "./Providers";
 
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
+import {Navbar} from "../components/layout/Navbar";
+import {Footer} from "../components/layout/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 
 const kode_mono = Kode_Mono({
@@ -30,6 +30,7 @@ export default function RootLayout({
         <ToastProvider>
           <Providers>
             <Navbar />
+            <ScrollToTop/>
             <main className="space stars1 bg-lightBg">
               {children}
               <Footer />

@@ -1,11 +1,11 @@
-import ContactForm from "../../components/UI/ContactForm";
-import Socials from "../../components/UI/Socials";
+import {ContactForm} from "../../components/UI/ContactForm";
+import {Socials} from "../../components/UI/Socials";
 
 const Contact = () => {
   return (
     <div className="px-6 pt-16">
       <div className="py-4 pt-20">
-        <h1 className="text-center font-semibold text-3xl dark:text-darkText text-lightBtn">
+        <h1 className="text-center font-semibold text-3xl lg:text-3xl dark:text-darkText text-lightBtn">
           Contact{" "}
           <span className="dark:text-orange-500 text-lightText">Me</span>
         </h1>
