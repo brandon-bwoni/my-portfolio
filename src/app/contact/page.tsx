@@ -2,7 +2,6 @@
 import {ContactForm} from "../../components/UI/ContactForm";
 import {Socials} from "../../components/UI/Socials";
 import { StaggerContainer, StaggerItem } from "../../animations/StaggerContainer";
-import { FloatingBubbles } from "../../animations/FloatingBubbles";
 import { motion } from "framer-motion";
 import { fadeInUp, gentleHover } from "../../animations/variants";
 
@@ -76,11 +75,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="relative min-h-screen">
-      {/* Floating Bubbles Background */}
-      <FloatingBubbles />
-      
-      <div className="relative z-10 px-6 pt-16">
+    <div className="px-6 pt-16">
       <motion.div 
         className="py-4 pt-20"
         variants={fadeInUp}

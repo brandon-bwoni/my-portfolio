@@ -8,6 +8,7 @@ import { FloatingBubbles } from "@/animations/FloatingBubbles";
 
 export default function Home() {
   return (
+    <>
     <div className="relative">
       {/* Floating Bubbles Background - only on home page */}
       <FloatingBubbles />
@@ -20,5 +21,6 @@ export default function Home() {
         <Contact />
       </div>
     </div>
+    </>
   );
 }
