@@ -14,7 +14,7 @@ export default function Home() {
       <FloatingBubbles />
       
       {/* Main content with higher z-index */}
-      <div className="relative z-10 px-16">
+      <div className="relative z-10 px-4 lg:px-16">
         <Hero />
         <About />
         <Services />

@@ -5,7 +5,7 @@ import { assets } from "../../constants/provider";
 
 export const Contact = () => {
   return (
-    <div className="mx-8 lg:mx-16 xl:mx-16 my-16 xl:my-32">
+    <div className="px-2 lg:px-12 my-16 xl:my-32">
       <div className="flex justify-center pt-2">
         <span className="font-semibold dark:text-darkText text-lightBtn text-3xl lg:text-4xl mb-3">
           Contact{" "}
@@ -31,8 +31,8 @@ export const Contact = () => {
           <Image 
             src={assets.fullstack} 
             alt="fullstack engineer" 
-            width={200}
-            height={200}
+            width={500}
+            height={500}
           />
         </div>
       </div>

@@ -50,7 +50,7 @@ export const Services = () => {
   ];
 
   return (
-    <div className="h-full ml-2 px-0 lg:px-24 my-16 xl:my-32">
+    <div className="h-full sm:px-2 lg:px-24 my-16 xl:my-32">
       <motion.div 
         className="flex justify-center pt-2"
         initial={{ opacity: 0, y: -20 }}
@@ -67,7 +67,7 @@ export const Services = () => {
       </motion.div>
       
       <StaggerContainer 
-        className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-4 lg:gap-8 mb-8 px-2 lg:pl-0 overflow-y-hidden lg:justify-center mt-6"
+        className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-4 lg:gap-8 mb-8 s lg:pl-0 overflow-y-hidden lg:justify-center mt-6"
         delay={0.2}
       >
         {services.map((service) => {

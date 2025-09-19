@@ -70,7 +70,7 @@ export const ContactForm = () => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <form className="px-4 py-6" onSubmit={handleSubmit(onSubmit)}>
+    <form className="px-2 py-3" onSubmit={handleSubmit(onSubmit)}>
       <div className="relative mb-6 " data-te-input-wrapper-init>
         <input
           type="text"
