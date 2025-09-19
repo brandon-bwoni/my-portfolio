@@ -43,7 +43,7 @@ export function FloatingBubbles() {
       {bubbles.map((bubble) => (
         <motion.div
           key={bubble.id}
-          className="absolute rounded-full bg-gradient-to-br from-teal-200/20 to-teal-300/10 backdrop-blur-sm"
+          className="absolute rounded-full bg-gradient-to-br from-lightBtn/20 to-lightText/10 dark:from-orange-500/20 dark:to-orange-300/10 backdrop-blur-sm"
           style={{
             width: bubble.size,
             height: bubble.size,
@@ -70,7 +70,7 @@ export function FloatingBubbles() {
 
       {/* Parallax cursor effect */}
       <motion.div
-        className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-teal-400/5 to-teal-500/5 backdrop-blur-sm"
+        className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-lightText/5 to-lightBtn/5 dark:from-orange-400/5 dark:to-orange-500/5 backdrop-blur-sm"
         animate={{
           x: mousePosition.x * 0.1,
           y: mousePosition.y * 0.1,
