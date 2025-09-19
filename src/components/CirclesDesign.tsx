@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "../assets/intro.png";
+import { assets } from "../constants/provider";
 
 const CirclesDesign = () => {
   return (
@@ -15,15 +15,15 @@ const CirclesDesign = () => {
 
       <div className="relative bottom-2">
         <Image
-          src={image}
+          src={assets.intro}
           alt="My Image"
+          width={380}
+          height={350}
           className="lg:h-[300px] lg:w-[250px] xl:h-[350px] xl:w-[380px] pt-5 rounded-b-full opacity-100 absolute z-100 bottom-[1px]"
         />
         {/* large-cicle */}
         <div className="items-center  stage shadow flex justify-center large-circle dark:bg-orange-500/90 xl:h-80 xl:w-80  lg:w-72 lg:h-72 rounded-full z-100 pb-2 xl:pb-6 opacity-30"></div>
       </div>
-      {/* small-circle */}
-      <div className="w-16 h-16 rounded-full absolute -left-12 top-48 -z-8 shadow-sm small-circle opacity-30"></div>
 
       {/* lower blue */}
       <div className=" xl:h-32 xl:w-32 lg:w-24 lg:h-24  rounded-full absolute xl:-bottom-12 lg:-bottom-4 -left-4 shadow-lg -z-5 shadow-3xl lower-blue opacity-20"></div>

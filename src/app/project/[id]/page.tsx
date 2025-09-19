@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { MdScreenshotMonitor } from "react-icons/md";
 import { FaArrowLeft } from "react-icons/fa6";
-import { projects } from "@/assets/provider";
+import { projects } from "@/constants/provider";
 import { motion } from "framer-motion";
 import Image from "next/image";
 

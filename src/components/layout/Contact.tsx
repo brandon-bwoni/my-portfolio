@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {ContactForm} from "../UI/ContactForm";
 
-import fullstack from "../../assets/fullstack.png";
+import { assets } from "../../constants/provider";
 
 export const Contact = () => {
   return (
@@ -28,7 +28,12 @@ export const Contact = () => {
           <ContactForm />
         </div>
         <div className="hidden lg:flex w-2/5">
-          <Image src={fullstack} alt="fullstack engineer" />
+          <Image 
+            src={assets.fullstack} 
+            alt="fullstack engineer" 
+            width={200}
+            height={200}
+          />
         </div>
       </div>
     </div>

@@ -1,14 +1,19 @@
+"use client";
+
 import Link from "next/link";
 import Type from "../../animations/Type";
 
 import { FaArrowDownLong } from "react-icons/fa6";
-import Socials from "../UI/Socials";
+import { Socials } from "../UI/Socials";
 import CirclesDesign from "../CirclesDesign";
 
 export const Hero = () => {
   return (
-    <div className="h-full flex flex-row gap-8 xl:gap-16 mb-6 pt-12 lg:pt-16">
-      <div className="w-1/2 h-full flex flex-col  font-medium justify-center lg:justify-start items-center mt-16 lg:mt-32 mx-auto lg:ml-8">
+    <div className="relative h-full flex flex-row gap-8 xl:gap-16 mb-6 pt-12 lg:pt-16">
+      {/* Floating Bubbles Background */}
+      
+      
+      <div className="relative z-10 w-1/2 h-full flex flex-col  font-medium justify-center lg:justify-start items-center mt-16 lg:mt-32 mx-auto lg:ml-8">
         <div className="text-center ">
           <h1 className="sm:text-2xl font-semibold lg:text-3xl mb-3 lg:mb-6 dark:text-lightBg text-lightBtn">
             Hello, I&apos;M
@@ -49,7 +54,9 @@ export const Hero = () => {
       </div>
 
       {/*Image  */}
-      <CirclesDesign />
+      <div className="relative z-10">
+        <CirclesDesign />
+      </div>
     </div>
   );
 }

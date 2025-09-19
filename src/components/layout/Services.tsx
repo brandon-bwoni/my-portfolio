@@ -1,8 +1,13 @@
+"use client";
+
 import { MdDeveloperBoard, MdOutlineDeveloperMode } from "react-icons/md";
 import { VscServerProcess } from "react-icons/vsc";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { LiaInfinitySolid } from "react-icons/lia";
 import { GiArtificialIntelligence } from "react-icons/gi";
+import { StaggerContainer, StaggerItem } from "../../animations/StaggerContainer";
+import { motion } from "framer-motion";
+import { serviceHover } from "../../animations/variants";
 
 export const Services = () => {
   const services = [
@@ -46,7 +51,12 @@ export const Services = () => {
 
   return (
     <div className="h-full ml-2 px-0 lg:px-24 my-16 xl:my-32">
-      <div className="flex justify-center pt-2">
+      <motion.div 
+        className="flex justify-center pt-2"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <span className="font-semibold dark:text-darkText text-lightBtn text-3xl lg:text-4xl mb-6">
           My{" "}
           <b className="text-lightText dark:text-orange-500 font-semibold">
@@ -54,29 +64,44 @@ export const Services = () => {
             Services
           </b>
         </span>
-      </div>
-      <div className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-4 lg:gap-8 mb-8 px-2 lg:pl-0 overflow-y-hidden lg:justify-center mt-6">
+      </motion.div>
+      
+      <StaggerContainer 
+        className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-4 lg:gap-8 mb-8 px-2 lg:pl-0 overflow-y-hidden lg:justify-center mt-6"
+        delay={0.2}
+      >
         {services.map((service) => {
           const IconComponent = service.icon;
           return (
-            <div key={service.id} className="flex flex-col justify-center items-center gap-3 w-56 h-56 bg-light_btn bg-lightText dark:bg-orange-500 rounded-xl text-center hover:cursor-pointer hover:transition-all hover:shadow-md">
-              <div className="dark:bg-darkBg bg-lightBtn p-1 rounded-full">
-                <div className="dark:bg-darkText bg-lightText p-2 rounded-full">
-                  <IconComponent className="w-8 h-8 text-lightBtn dark:text-darkBg" />
+            <StaggerItem key={service.id}>
+              <motion.div 
+                className="flex flex-col justify-center items-center gap-3 w-56 h-56 bg-light_btn bg-lightText dark:bg-orange-500 rounded-xl text-center hover:cursor-pointer"
+                variants={serviceHover}
+                whileHover="hover"
+                transition={{ duration: 0.2 }}
+              >
+                <motion.div 
+                  className="dark:bg-darkBg bg-lightBtn p-1 rounded-full"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <div className="dark:bg-darkText bg-lightText p-2 rounded-full">
+                    <IconComponent className="w-8 h-8 text-lightBtn dark:text-darkBg" />
+                  </div>
+                </motion.div>
+                <div className="flex flex-col gap-2 px-2">
+                  <h1 className="font-bold text-lg dark:text-darkBg text-darkText leading-5 text-wrap">
+                    {service.title}
+                  </h1>
+                  <p className="text-sm font-medium leading-4 dark:text-darkText text-lightBtn">
+                    {service.description}
+                  </p>
                 </div>
-              </div>
-              <div className="flex flex-col gap-2 px-2">
-                <h1 className="font-bold text-lg dark:text-darkBg text-darkText leading-5 text-wrap">
-                  {service.title}
-                </h1>
-                <p className="text-sm font-medium leading-4 dark:text-darkText text-lightBtn">
-                  {service.description}
-                </p>
-              </div>
-            </div>
+              </motion.div>
+            </StaggerItem>
           );
         })}
-      </div>
+      </StaggerContainer>
     </div>
   );
 }

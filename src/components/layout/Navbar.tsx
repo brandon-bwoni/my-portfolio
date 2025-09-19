@@ -16,7 +16,7 @@ import {
 } from "react-icons/md";
 import { TfiWrite } from "react-icons/tfi";
 
-import logo from "../../assets/logo.png";
+import logo from "../../../public/logo.svg";
 import ThemeSwitch from "../theme/ThemeSwitch";
 
 export const Navbar = () => {
@@ -161,7 +161,7 @@ export const Navbar = () => {
               <Image
                 src={logo}
                 alt="Logo"
-                className="xl:w-[80px] sm:h-8 sm:w-16 opacity-80"
+                className="xl:w-[40px] sm:h-8 sm:w-16 opacity-80"
               />
             </span>
           </Link>

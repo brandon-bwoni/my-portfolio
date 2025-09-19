@@ -1,7 +1,7 @@
-import Image from "next/image.js";
+import Image from "next/image";
 import { GiBulletBill } from "react-icons/gi";
 
-import { logos } from "@/assets/provider.js";
+import { logos } from "@/constants/provider";
 
 const About = () => {
   return (
@@ -86,6 +86,8 @@ const About = () => {
                 <Image
                   src={logo.logo}
                   alt="service"
+                  width={64}
+                  height={64}
                   className="sm:h-12 sm:w-12 lg:h-16 lg:w-16"
                 />
               </div>

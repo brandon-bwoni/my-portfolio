@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import work from "@/assets/work.png";
+import { assets } from "@/constants/provider";
 
 const page = () => {
   return (
@@ -23,7 +23,13 @@ const page = () => {
         </span>
       </div>
       <div className="flex flex-col justify-center items-center ">
-        <Image src={work} alt="Work in progess" className="opacity-80" />
+        <Image 
+          src={assets.work} 
+          alt="Work in progess" 
+          width={400}
+          height={300}
+          className="opacity-80" 
+        />
         <button className="hover:underline px-3 py-2 rounded-xl dark:text-darkText text-lightBtn ">
           <Link href="/projects">Go back to projects</Link>
         </button>
