@@ -6,6 +6,7 @@ import { Providers, ToastProvider } from "./Providers";
 import {Navbar} from "../components/layout/Navbar";
 import {Footer} from "../components/layout/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import { PageTransition } from "../animations/PageTransition";
 
 const kode_mono = Kode_Mono({
   subsets: ["latin"],
@@ -32,7 +33,9 @@ export default function RootLayout({
             <Navbar />
             <ScrollToTop/>
             <main className="space stars1 bg-lightBg">
-              {children}
+              <PageTransition>
+                {children}
+              </PageTransition>
               <Footer />
             </main>
           </Providers>
