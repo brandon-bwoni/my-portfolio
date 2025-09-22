@@ -55,23 +55,23 @@ const page = ({ params }: { params: Params }) => {
                 className="flex p-6 bg-lightBg dark:bg-darkBg/80 shadow-md justify-center gap-6 rounded-xl"
               >
                 <a
-                  href={project?.github || ""}
+                  href={project?.demo || ""}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <button className="flex justify-center items-center w-[100px] h-10 border  sm:text-nowrap border-lightText hover:bg-lightText/20 hover:text-lightText dark:border-darkText font-medium rounded-xl text-sm text-lightText  dark:hover:bg-darkText/20 dark:hover:text-darkText dark:hover:border-transparent hover:border-transparent dark:text-darkText gap-1  hover:shadow-darkBg/30">
-                    <FaGithub className="h-5 w-5 " />
-                    <span>Github</span>
+                    <MdScreenshotMonitor className="h-5 w-5 " />
+                    <span>Demo</span>
                   </button>
                 </a>
-                <Link href="/demo">
+                {/* <Link href="/demo">
                   <button className="w-[100px] h-10 sm:text-nowrap font-medium rounded-xl text-sm bg-lightText text-lightBtn hover:text-white dark:text-darkText dark:bg-darkBg dark:hover:bg-lightText dark:hover:text-white hover:shadow-md hover:transition-all ">
                     <div className="flex justify-center gap-2">
                       <MdScreenshotMonitor className="h-5 w-5 " />
                       <p>Demo</p>
                     </div>
                   </button>
-                </Link>
+                </Link> */}
               </motion.div>
             </div>
 
@@ -105,9 +105,20 @@ const page = ({ params }: { params: Params }) => {
             ))}
         </div>
       </div>
-      <div className="flex flex-col gap-2 justify-center mt-6 px-24">
+      <div className="flex flex-col gap-2 justify-center items-center py-6 mt-6 px-24">
         {/* <h1 className="text-xl font-bold text-center">Screenshots</h1> */}
-        <span className="lg:text-lg leading-5"></span>
+        <span className="lg:text-lg leading-5">
+          <a
+                  href={project?.demo || ""}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="flex justify-center items-center w-[100px] h-10 border  sm:text-nowrap border-lightText hover:bg-lightText/20 hover:text-lightText dark:border-darkText font-medium rounded-xl text-sm text-lightText  dark:hover:bg-darkText/20 dark:hover:text-darkText dark:hover:border-transparent hover:border-transparent dark:text-darkText gap-1  hover:shadow-darkBg/30">
+                    <MdScreenshotMonitor className="h-5 w-5 " />
+                    <span>Demo</span>
+                  </button>
+                </a>
+        </span>
       </div>
     </div>
   );

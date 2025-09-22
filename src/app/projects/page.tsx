@@ -36,7 +36,6 @@ const Projects = () => {
                 image={item.image}
                 description={item.description}
                 name={item.name}
-                github={item.github}
                 demo={item.demo}
               />
             </StaggerItem>

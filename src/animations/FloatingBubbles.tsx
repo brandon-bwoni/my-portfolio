@@ -14,9 +14,12 @@ interface Bubble {
 export function FloatingBubbles() {
   const [bubbles, setBubbles] = useState<Bubble[]>([])
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    // Generate random bubbles
+    setIsClient(true)
+    
+    // Generate random bubbles only on client
     const newBubbles: Bubble[] = Array.from({ length: 8 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
@@ -37,6 +40,11 @@ export function FloatingBubbles() {
     window.addEventListener("mousemove", handleMouseMove)
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
+
+  // Don't render anything until client-side
+  if (!isClient) {
+    return null
+  }
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">

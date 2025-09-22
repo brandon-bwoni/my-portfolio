@@ -12,7 +12,6 @@ type CardProps = {
   name: string;
   image: string;
   description: string;
-  github: string;
   demo: string;
 };
 
@@ -21,7 +20,6 @@ export const ProjectCard = ({
   name,
   image,
   description,
-  github,
   demo,
 }: CardProps) => {
   return (
@@ -53,7 +51,7 @@ export const ProjectCard = ({
             </p>
           </div>
           <div className="flex flex-row justify-center gap-6">
-            <motion.a 
+            {/* <motion.a 
               href={github} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -64,7 +62,7 @@ export const ProjectCard = ({
                 <FaGithub className="h-5 w-5 " />
                 <span>Github</span>
               </button>
-            </motion.a>
+            </motion.a> */}
             <Link href={demo}>
               <motion.button 
                 className="w-[100px] h-10 sm:text-nowrap font-medium rounded-xl text-sm bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90 hover:text-white dark:text-darkText dark:bg-darkBg dark:hover:bg-lightText dark:hover:text-white hover:shadow-md hover:transition-all"

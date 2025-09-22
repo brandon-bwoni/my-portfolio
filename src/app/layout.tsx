@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" />
-      <body className={`${kode_mono.className} dark:main `}>
+      <body className={`${kode_mono.className} dark:main `} suppressHydrationWarning>
         <ToastProvider>
           <Providers>
             <Navbar />
