@@ -67,7 +67,7 @@ export const Services = () => {
       </motion.div>
       
       <StaggerContainer 
-        className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-4 lg:gap-8 mb-8 s lg:pl-0 overflow-y-hidden lg:justify-center mt-6"
+        className="h-full sm:overflow-x-auto sm:grid sm:grid-flow-col lg:overflow-x-hidden lg:flex no-scrollbar flex-wrap gap-4 lg:gap-8 mb-8  lg:pl-0 overflow-y-hidden lg:justify-center mt-6"
         delay={0.2}
       >
         {services.map((service) => {

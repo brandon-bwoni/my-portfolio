@@ -35,10 +35,6 @@ export const ProjectCard = ({
           }}
           transition={{ duration: 0.2, ease: "easeOut" }}
         >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
             <Image
               src={image}
               width={100}
@@ -46,15 +42,12 @@ export const ProjectCard = ({
               alt={name}
               className="h-[50%] w-full rounded-t-lg"
             />
-          </motion.div>
           <div className="text-center p-4 rounded-t-md">
-            <motion.h1 
+            <h1 
               className="dark:text-darkBg text-lightText font-bold text-xl leading-5"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
             >
               {name}
-            </motion.h1>
+            </h1>
             <p className="text-sm font-medium leading-5 text-lightText dark:text-darkText pt-1">
               {description}
             </p>
@@ -72,7 +65,7 @@ export const ProjectCard = ({
                 <span>Github</span>
               </button>
             </motion.a>
-            <Link href="/demo">
+            <Link href={demo}>
               <motion.button 
                 className="w-[100px] h-10 sm:text-nowrap font-medium rounded-xl text-sm bg-lightText text-lightBtn hover:bg-blue-800 hover:text-white/90 hover:text-white dark:text-darkText dark:bg-darkBg dark:hover:bg-lightText dark:hover:text-white hover:shadow-md hover:transition-all"
                 whileHover={{ scale: 1.05 }}

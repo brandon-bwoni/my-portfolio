@@ -29,6 +29,8 @@ const page = ({ params }: { params: Params }) => {
             src={project?.banner || "/default-banner.jpg"}
             alt={project?.name || "Project banner"}
             className="w-full h-full lg:h-[360px] rounded-2xl"
+            width={720}
+            height={320}
           />
           <div className="wrap top-4">
             <Link href="/projects">
